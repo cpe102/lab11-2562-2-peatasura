@@ -1,7 +1,7 @@
 #include<iostream>
 
 using namespace std;
-
+int gcd(int x , int y);
 //Write function prototype here
 
 int main(){
@@ -14,7 +14,15 @@ int main(){
 	
 	return 0;
 }
-
+int gcd(int x,int y)
+{
+	if (x%y==0) return y;
+	else
+	{
+		return gcd(y,x%y);
+	}
+	
+}
 //Write function definition here
 /*
 ??? gcd(???){
